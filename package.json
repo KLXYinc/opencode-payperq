@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "opencode-payperq",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "PayPerQ (ppq.ai) provider for OpenCode: connects the API and keeps the model catalog up to date",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "payperq",
+    "ppq",
+    "provider"
+  ],
+  "main": "./index.ts",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "files": [
+    "index.ts",
+    "tui.tsx",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.32"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.32",
+    "@opentui/core": "^0.5.17",
+    "@opentui/solid": "^0.5.17",
+    "@types/node": "^24.12.2",
+    "solid-js": "^1.9.15",
+    "typescript": "^5.8.2"
+  }
+}
